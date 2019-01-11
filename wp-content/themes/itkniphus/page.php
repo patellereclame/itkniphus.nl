@@ -1,4 +1,5 @@
-<?php /* Template Name: Front-page */ ?>
+<?php /* Template Name: standart-page */ ?>
+
 <?php get_header(); ?>
 
 <div class="site-inner">

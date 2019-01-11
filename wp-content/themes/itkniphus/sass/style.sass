@@ -37,7 +37,7 @@ $mr: 0 auto
 body
 	margin: 0
 	background: none
-	font-size: 13px
+	font-size: 15px
 	font-family: 'lato','sans-serif'
 
 
@@ -48,16 +48,74 @@ h1,h2,h3,h4,h5
 p
 	letter-spacing: 1.2px
 
+footer
+	background: none
+
+//navigation
+nav.navbar
+	background: #fff
+	width: 100%
+	position: relative
+	display: block
+	border-bottom: 1px solid #e8e8e8
+	background: #f9f9f9
+	height: auto
+	height: 75px
+
+#bs-example-navbar-collapse-1
+	position: absolute
+	right: 0
+	z-index: 999
+
+li.menu-item
+	position: relative
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 15px
+	padding-bottom: 15px
+	right: 20px
+
+	a
+		color: #9c9c9c
+		font-size: 15px
+		text-decoration: none
+		text-transform: uppercase
+
+li.menu-item a:hover
+		color: #4e4e4e
+		transition: 0.2s
+		-webkit-transition: 0.2s
+		-moz-webkit-transition: 0.2s
+
+.navbar-toggler-icon:focus
+	border: none
+
+.container
+	width: 90%
+
+ul#menu-primary
+	width: 100%
 
 .header
 	width: 100%
 	height: 700px
 	max-height: 800px
 	margin: auto
-	background: url(img/header.jpg)
+	background-image: url(../itkniphus/images/header.jpg)
 	background-size: cover
 	background-repeat: no-repeat
 
+.entry-header
+	display: none
+
+a.button
+	background: #33b2f5
+	color: #fff
+	padding: 15px 35px 15px 35px
+	top: 40px
+	position: relative
+	font-size: 25px
+	border-radius: 2px
 
 h2.section-title
 	text-align: center
@@ -78,6 +136,7 @@ p.sub-tekst
 .logo-content
 	width: 100%
 	background: #fff
+	padding-top: 25px
 
 
 .header-title h1
@@ -107,7 +166,6 @@ p.sub-tekst
 	font-size: 18px
 
 
-
 a.button:hover
 	background: #089ede
 	transition: ease all 0.8s
@@ -116,66 +174,73 @@ a.button:hover
 	color: #08b5ff
 
 .section-1
-  margin-top: -50px
-  padding-bottom: 45px
-  border-top-right-radius: 5px
-  border-top-left-radius: 5px
-  background: #fff
-
+	margin-top: -50px
+	padding-bottom: 45px
+	border-top-right-radius: 5px
+	border-top-left-radius: 5px
+	background: #fff
 
 .section-2
-    margin: auto
-    padding-bottom: 45px
-    background: #fff
-
+	margin: auto
+	padding-bottom: 45px
+	background: #fff
 
 .price
 	position: relative
 	float: left
 	padding-bottom: 15px
 
-
 .site-inner
 	width: auto
 	background: #f9f8f8
-
 
 .image-box
 	float: left
 	align-items: center
 	text-align: center
 
-
 .tekst-area
 	float: left
 
-
 .footer
 	height: 50px
-    background: #26262b
-    box-shadow: 4px 1px 15px #000000b0
-    z-index: 1
-    position: relative
-
+	background: #808080
+	z-index: 1
+	position: relative
 
 .end-info
 	margin: 0 auto
-	color: #fff
+	color: #808080
 	padding-top: 10px
 
+.footer-link
+	color: #808080
 
 table th
 	text-align: left
 	position: relative
 	padding-bottom: 12px
 
-
-
-
 td
 	padding-bottom: 7px
 
-
 th, td
 	border-left: 2px solid #e0e0e0
-    padding-left: 25px
+	padding-left: 25px
+
+//Media
+
+@media (max-width: 768px)
+	#bs-example-navbar-collapse-1, .show
+			position: relative
+			padding-top: 15px
+			width: 100%
+
+	nav.navbar
+		position: relative
+		display: block
+		width: 100%
+
+		li.menu-item
+			border-bottom: 1px solid #dedddd
+			width: 100%

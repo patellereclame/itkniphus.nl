@@ -18,6 +18,7 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
 add_theme_support( 'post-thumbnails' );
 
+// Register custom navigation walker
 
 //menu's
 
@@ -31,5 +32,6 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
 
 ?>
